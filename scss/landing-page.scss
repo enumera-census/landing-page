@@ -3,9 +3,9 @@
 @import "mixins.scss";
 // Global CSS
 @import "global.scss";
-// Color palette
-@import "colors.scss";
+@import "media.scss";
 // Components
+@import "navigation.scss";
 @import "masthead.scss";
 @import "showcase.scss";
 @import "icons.scss";

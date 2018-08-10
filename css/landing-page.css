@@ -12,6 +12,15 @@ h6 {
   font-weight: 700;
 }
 
+#img_globe {
+  max-width: 100%;
+  height: auto;
+}
+
+#e {
+  color: #69C6E2;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -119,15 +128,4 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-/* CUSTOM */
-
-.color_bright_blue {
-  color: #057FE2 !important;
-}
-
-#img_globe {
-  max-width: 100%;
-  height: auto;
 }
