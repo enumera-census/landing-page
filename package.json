@@ -1,29 +1,17 @@
 {
-    "title": "Landing Page",
-    "name": "startbootstrap-landing-page",
-    "version": "4.1.1",
-    "description": "An HTML landing page template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/landing-page",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "title": "Enumera Landing Page",
+    "name": "enumera-landing-page",
+    "version": "2.0",
+    "description": "Landing page for Enumera.org",
+    "homepage": "https://github.com/enumera-census/landing-page",
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Val Mack (@thevaleriemack)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page.git"
+        "url": "https://github.com/enumera-census/landing-page.git"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
