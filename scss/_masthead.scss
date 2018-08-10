@@ -1,7 +1,7 @@
 header.masthead {
   position: relative;
   background-color: $gray-800;
-  background: url('../img/nasa.jpg') no-repeat center center;
+  background: url('../img/bg-masthead.jpg') no-repeat center center;
   @include background-cover;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -15,11 +15,15 @@ header.masthead {
     opacity: 0.3;
   }
   h1 {
-    font-size: 2rem;
+    font-family: 'Times';
+    font-size: 5rem;
+  }
+  h4 {
+    font-weight: normal;
   }
   @media (min-width: 768px) {
     h1 {
-      font-size: 3rem;
+      font-size: 5rem;
     }
   }
 }

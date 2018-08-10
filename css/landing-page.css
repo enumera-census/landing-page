@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -18,13 +18,13 @@ h6 {
 }
 
 #e {
-  color: #69C6E2;
+  color: #007bff;
 }
 
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/nasa.jpg") no-repeat center center;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,12 +44,17 @@ header.masthead .overlay {
 }
 
 header.masthead h1 {
-  font-size: 2rem;
+  font-family: 'Times';
+  font-size: 5rem;
+}
+
+header.masthead h4 {
+  font-weight: normal;
 }
 
 @media (min-width: 768px) {
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
