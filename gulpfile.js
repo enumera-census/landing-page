@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var merge = require('merge-stream');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -19,7 +20,7 @@ var banner = ['/*!\n',
 gulp.task('vendor', function() {
 
   // Bootstrap
-  gulp.src([
+  var bootstrap = gulp.src([
       './node_modules/bootstrap/dist/**/*',
       '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
@@ -27,7 +28,7 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/bootstrap'))
 
   // Font Awesome
-  gulp.src([
+  var fontAwesome = gulp.src([
       './node_modules/@fortawesome/fontawesome-free/**/*',
       '!./node_modules/@fortawesome/fontawesome-free/{less,less/*}',
       '!./node_modules/@fortawesome/fontawesome-free/{scss,scss/*}',
@@ -37,28 +38,30 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/fontawesome'))
 
   // jQuery
-  gulp.src([
+  var jQuery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'))
 
   // jQuery Easing
-  gulp.src([
+  var jQueryEasing = gulp.src([
       './node_modules/jquery.easing/*.js'
     ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
   // Simple Line Icons
-  gulp.src([
+  var simpleLineIcons = gulp.src([
       './node_modules/simple-line-icons/fonts/**',
     ])
     .pipe(gulp.dest('./vendor/simple-line-icons/fonts'))
 
-  gulp.src([
+  var simpleLineIcons1 = gulp.src([
       './node_modules/simple-line-icons/css/**',
     ])
-    .pipe(gulp.dest('./vendor/simple-line-icons/css'))
+    .pipe(gulp.dest('./vendor/simple-line-icons/css'));
+
+  return merge(bootstrap, fontAwesome, jQuery, jQueryEasing, simpleLineIcons, simpleLineIcons1);
 
 });
 
