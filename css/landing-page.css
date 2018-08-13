@@ -23,8 +23,7 @@ h6 {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-color: #4A6180;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,7 +34,7 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color: #4A6180;
   height: 100%;
   width: 100%;
   top: 0;
@@ -74,7 +73,6 @@ header.masthead h4 {
 }
 
 .features-icons {
-  padding-top: 7rem;
   padding-bottom: 7rem;
 }
 
@@ -83,11 +81,12 @@ header.masthead h4 {
 }
 
 .features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
+  max-width: 12rem !important;
 }
 
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
+.features-icons .features-icons-item .features-icons-icon img {
+  padding: 2rem;
+  max-height: 12rem !important;
 }
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
@@ -110,8 +109,6 @@ header.masthead h4 {
 
 .call-to-action {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,10 +124,11 @@ header.masthead h4 {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 footer.footer {
+  background-color: #4A6180;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }

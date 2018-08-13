@@ -1,13 +1,13 @@
 header.masthead {
   position: relative;
   background-color: #4A6180;
-  background: url('../img/bg-masthead.jpg') no-repeat center center;
+  //background: url('../img/bg-masthead.jpg') no-repeat center center;
   @include background-cover;
   padding-top: 4rem;
   padding-bottom: 4rem;
   .overlay {
     position: absolute;
-    background-color: $gray-900;
+    background-color: #4A6180;;
     height: 100%;
     width: 100%;
     top: 0;
