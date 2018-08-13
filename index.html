@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/whitepaper" target="_blank">
+              <a class="nav-link" href="media/litepaper1-1.pdf" target="_blank">
                 Litepaper
               </a>
             </li>
@@ -77,7 +77,7 @@
       <div class="container">
         <div class="row">
           <div class="col mx-auto my-auto showcase-text">
-            <h2>What are we building?</h2>
+            <h2 id="about">What are we building?</h2>
             <p class="lead mb-0">
               Enumera is a population census protocol that leverages the power
               of portable digital identies and peer-to-peer distributed ledgers
@@ -102,31 +102,60 @@
     <section class="features-icons bg-light text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
+              <div class="features-icons-icon rounded-circle img-fluid mx-auto">
+                <img id="e-icon-green" src="img/extensible.svg" alt="extensible"></img>
               </div>
-              <h3>Fully Responsive</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+              <p class="mb-0 text-justify"><strong>An extensible census.</strong>
+                Enumera allows a census form to dynamically capture the
+                identities of a community. Anyone can propose questions be added
+                to the census, and the community decides on which questions are
+                worth keeping.
+              </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
+              <div class="features-icons-icon rounded-circle img-fluid mx-auto">
+                <img id="e-icon-blue" src="img/verified.svg" alt="extensible"></img>
               </div>
-              <h3>Bootstrap 4 Ready</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+              <p class="mb-0 text-justify">
+                <strong>Publicly verified on the blockchain.</strong> Every
+                Enumera census entry is anonymized, encrypted and securely sent
+                to a public blockchain. The security features used to maintain
+                privacy can be publicly examined.
+              </p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon rounded-circle img-fluid mx-auto">
+                <img id="e-icon-red" src="img/decentralized.svg" alt="extensible"></img>
               </div>
-              <h3>Easy to Use</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <p class="mb-0 text-justify">
+                <strong>Completely decentralized.</strong> By using a
+                peer-to-peer distributed blockchain system, we eliminate the
+                risk of census data being lost, stolen, or corrupted in any way.
+                The data is securely stored and maintained by thousands of
+                people across the world.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon rounded-circle img-fluid mx-auto">
+                <img id="e-icon-gray" src="img/anonymous.svg" alt="extensible"></img>
+              </div>
+              <p class="mb-0 text-justify">
+                <strong>Anonymous by default.</strong> No one will ever know
+                what information you entered when you submit the Enumera census
+                form. This means you can answer every question without fear of
+                your personal information being revealed to law enforcement,
+                immigration agencies, or any other government agency.
+              </p>
             </div>
           </div>
         </div>
@@ -134,7 +163,7 @@
     </section>
 
     <!-- Image Showcases -->
-    <section class="showcase">
+    <!-- <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
@@ -159,9 +188,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Testimonials -->
+    <!-- Team -->
     <section class="testimonials text-center bg-light">
       <div class="container">
         <h2 class="mb-5">Team</h2>
@@ -178,7 +207,6 @@
               <img class="img-fluid rounded-circle mb-3" src="img/val.jpg" alt="">
               <h5>Val Mack</h5>
               <p class="font-weight-light mb-0">Co-founder - Blockchain Engineering</p>
-              <p>"Data privacy and security should be a basic human right."</p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -193,7 +221,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="call-to-action text-center bg-light">
+    <!-- <section class="call-to-action text-center bg-light">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -215,16 +243,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2">
+            <!-- <ul class="list-inline mb-2">
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
@@ -238,24 +266,25 @@
               <li class="list-inline-item">
                 <a href="#">Privacy Policy</a>
               </li>
-            </ul>
-            <p class="small mb-4 mb-lg-0">&copy; Enumera 2018. All Rights Reserved.</p>
+            </ul> -->
+            <p class="small mb-4 mb-lg-0 text-light">&copy; Enumera 2018. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <p class="text-light">Follow Us</p>
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-telegram fa-2x fa-fw"></i>
+                <a href="https://t.me/popchain" class="text-light">
+                  <i class="fab fa-telegram-plane fa-2x fa-fw"></i>
                 </a>
               </li>
               <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                <a href="https://twitter.com/Popchain_us" class="text-light">
+                  <i class="fab fa-twitter fa-2x fa-fw"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin fa-2x fa-fw"></i>
+                <a href="https://www.linkedin.com/company/popchain/" class="text-light">
+                  <i class="fab fa-linkedin fa-2x fa-fw"></i>
                 </a>
               </li>
             </ul>
