@@ -1,0 +1,74 @@
+$bg-color: #eee;
+$shadow-color: #1ce;
+
+@function shadow($color, $depth) {
+  $val: 0 0 $color;
+  @for $i from 1 through $depth {
+    $hue: adjust-hue($color, $i * 0.1);
+    $val: #{$val}, -#{$i}px #{$i * 0.5}px $hue;
+  }
+  $extra1: ', 0 -1px ' $color;
+  $extra2: ', 1px 0 ' $color;
+  $extra3: ', 1px 1px ' $color;
+  @return $val + $extra1 + $extra2 + $extra3;
+}
+
+blockquote {
+  font: italic 900 60px/1 Montserrat, sans-serif;
+  color: $bg-color;
+  margin: auto;
+  text-shadow: shadow($shadow-color, 1000);
+
+  &:before {
+    content: 'CLICK';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 900 14px/1 Montserrat;
+    color: $shadow-color;
+    letter-spacing: 3px;
+    animation: pulse .5s ease-in alternate infinite;
+    text-shadow: none;
+  }
+
+  span {
+    display: block;
+    transform: translate3d(-50vw, 30vw, 0);
+    opacity: 0;
+    transition: all 1s cubic-bezier(.65,.02,.23,1);
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        transition-delay: .1s * $i;
+        z-index: $i;
+      }
+    }
+  }
+
+  &.animate {
+    &:before {
+      display: none;
+    }
+
+    span {
+      opacity: 1;
+      position: relative;
+
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i}) {
+          transform: translate3d(20px * $i, 0, 0);
+          transition-delay: .1s * (7 - $i);
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

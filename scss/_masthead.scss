@@ -21,9 +21,13 @@ header.masthead {
   h4 {
     font-weight: normal;
   }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     h1 {
-      font-size: 5rem;
+      font-size: 3rem;
+      text-align: center;
     }
+  }
+  .heading-animation {
+    @include heading-animation;
   }
 }
